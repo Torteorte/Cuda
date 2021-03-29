@@ -1,0 +1,453 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 1440px;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition-duration: 400ms;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 42px;
+}
+.upper {
+  text-transform: uppercase;
+}
+/* Верхушка */
+header {
+  width: 100%;
+  background-color: #87509c;
+  padding-top: 65px;
+  padding-bottom: 170px;
+}
+header h2 {
+  margin-top: 125px;
+  line-height: 48px;
+}
+.up-header {
+  height: 55px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  column-gap: 470px;
+  align-items: center;
+}
+.up-header img {
+  margin-left: 40px;
+}
+.up-header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.up-header a {
+  color: white;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+.btn {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 75px;
+  text-align: center;
+}
+.btn a {
+  font-weight: 400;
+  background-color: #eb7d4b;
+  padding: 20px 80px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 0px #c86a40;
+}
+.active {
+  background-color: #643a79;
+  border-radius: 5px;
+}
+.up-header a:hover {
+  color: #eb7d4b;
+}
+.btn a:hover {
+  background-color: #643a79;
+  color: #eb7d4b;
+  box-shadow: 0 5px 0 0px #372042;
+}
+/* Наши услуги */
+.our-service {
+  background-color: #17c2a4;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.our-service h2 {
+  padding-top: 10px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.our-service p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #f0fbf9;
+}
+.servise-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+.servise-list .servise-item {
+  width: 260px;
+  margin: 0 10px;
+}
+.servise-list .servise-item .image-block {
+  height: 140px;
+  margin-bottom: 35px;
+}
+.servise-list .servise-item h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.servise-list .servise-item p {
+  font-size: 16px;
+  padding: 0 30px;
+}
+/* Наша команда */
+.our-team {
+  background-color: #e7f1f8;
+  padding-top: 80px;
+  padding-bottom: 130px;
+}
+.our-team h2 {
+  color: #3c4761;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 0;
+  line-height: 42px;
+}
+.our-team p {
+  margin: 0;
+  color: #47526b;
+  font-weight: 400;
+}
+.personal-list {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.personal-list .personal-item {
+  width: 260px;
+  margin: 0 10px;
+}
+.personal-list .personal-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.personal-list .personal-item h3 {
+  text-transform: uppercase;
+  color: #3c4761;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.personal-list .personal-item span {
+  font-size: 16px;
+  text-transform: none;
+  color: #30bae7;
+}
+.personal-list .personal-item p {
+  margin-top: 15px;
+  font-size: 16px;
+  padding: 0 30px;
+}
+.social-links {
+  margin-top: 5px;
+}
+.social-links a {
+  color: black;
+  background: url("image/Social-contacts.svg") no-repeat center;
+  background-position: 0px 0px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 0;
+}
+.social-links .twitter {
+  background-image: url("image/Social-contacts.svg");
+  background-position: -45px 0px;
+}
+.social-links .LinkedID {
+  background-image: url("image/Social-contacts.svg");
+  background-position: -86px 0px;
+}
+.social-links a:last-child {
+  background-image: url("image/Social-contacts.svg");
+  background-position: -130px 0px;
+}
+.social-links a:hover {
+  transform: scale(1.4);
+}
+/* Наши навыки */
+.our-skills {
+  background-color: #ffffff;
+  color: #3c4761;
+  padding-top: 60px;
+  padding-bottom: 125px;
+}
+.our-skills h2 {
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+.our-skills p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+.skill-items {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px;
+  column-gap: 20px;
+}
+.skill-items div {
+  position: relative;
+}
+.skill-items p {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+}
+.skill-items h3 {
+  position: absolute;
+  top: 10px;
+  left: 95px;
+  font-size: 50px;
+  font-weight: 400;
+}
+/* Наше портфолио */
+.our-portfolio {
+  background-color: #ffdd99;
+  padding-top: 65px;
+  padding-bottom: 135px;
+  color: #393939;
+}
+.our-portfolio h2 {
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+.our-portfolio p {
+  font-weight: 400;
+  margin: 0;
+}
+.our-portfolio .active {
+  background-color: white;
+}
+.our-portfolio ul {
+  margin: 35px auto 60px auto;
+  padding: 0 80px;
+  width: 540px;
+}
+.our-portfolio ul li {
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 5px;
+}
+.our-portfolio ul li > a {
+  color: #393939;
+  padding: 5px 20px;
+  background-color: #ebc985;
+  border-radius: 5px;
+}
+.our-portfolio a:hover {
+  background-color: white;
+}
+.portfolio-items {
+  display: grid;
+  grid-template-columns: 540px 540px;
+  column-gap: 20px;
+  row-gap: 60px;
+}
+.portfolio-items p {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.our-portfolio .btn {
+  margin-top: 100px;
+}
+.our-portfolio .btn a {
+  background-color: #17c2a4;
+  box-shadow: 0 5px 0 0 #14a58c;
+  padding: 20px 60px;
+}
+.our-portfolio .btn a:hover {
+  background-color: #643a79;
+  color: white;
+  box-shadow: 0 5px 0 0px #372042;
+}
+/* Отзывы */
+.feed-back {
+  background-color: #d74680;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.feed-back h2 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+.feed-back p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.feedback-items {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  column-gap: 20px;
+}
+.feedback-items div {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  padding-left: 150px;
+  padding-right: 35px;
+  text-align: left;
+  position: relative;
+}
+.feedback-items p:first-child {
+  font-size: 21px;
+  margin: 0;
+  font-style: italic;
+}
+.feedback-items h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 15px;
+  font-weight: 400;
+}
+.feedback-items p:last-child {
+  margin-top: 0;
+  color: #fac996;
+}
+.feedback-items div:after {
+  background: url("image/Mugshot.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  content: "";
+  top: 0;
+  left: 0px;
+}
+/* Форма */
+.form-field {
+  background-color: #3c5499;
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+.form-field h2 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+.form-field p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.form-feedback {
+  width: 860px;
+  margin: auto;
+  margin-top: 80px;
+}
+.form-feedback div {
+  margin: 20px 0;
+}
+.form-feedback input[type="text"],
+.form-feedback input[type="email"],
+.form-feedback textarea {
+  color: white;
+  height: 55px;
+  background-color: #273a71;
+  box-sizing: border-box;
+  border: 0;
+  width: 415px;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 25px;
+}
+.form-feedback input[type="text"] {
+  float: left;
+}
+.form-feedback input[type="email"] {
+  float: right;
+}
+.form-feedback textarea {
+  margin-top: 30px;
+  width: 860px;
+  height: 200px;
+  padding-top: 15px;
+}
+.form-feedback input[type="submit"] {
+  margin-top: 25px;
+  color: white;
+  background-color: #30bae7;
+  padding: 25px 75px 20px 75px;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 0px #299ec5;
+  transition-duration: 400ms;
+}
+.form-feedback input[type="submit"]:hover {
+  background-color: #643a79;
+  box-shadow: 0 5px 0 0px #372042;
+  color: 643a79;
+}
+/* Низ */
+footer {
+  background-color: #344b8e;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  height: 95px;
+  padding-top: 15px;
+}
+footer ul {
+  padding: 0;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 50px;
+  text-align: center;
+}
+footer ul li {
+  padding: 0;
+}
+footer ul a {
+  color: white;
+  padding: 5px 0px;
+}
+footer a:hover {
+  color: #30bae7;
+}

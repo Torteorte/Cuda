@@ -20,12 +20,23 @@ a {
   margin: 0 auto;
   text-align: center;
 }
+.container h2 {
+  margin-bottom: 10px;
+}
+.container > p {
+  margin-top: 15px;
+}
 h2 {
   text-align: center;
   font-size: 42px;
 }
 .upper {
   text-transform: uppercase;
+}
+.line {
+  width: 90px;
+  height: 5px;
+  margin: 10px auto;
 }
 /* Верхушка */
 header {
@@ -97,7 +108,6 @@ header h2 {
 }
 .our-service h2 {
   padding-top: 10px;
-  margin-bottom: 25px;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -106,6 +116,9 @@ header h2 {
   font-weight: 400;
   font-size: 18px;
   color: #f0fbf9;
+}
+.our-service .line {
+  background-color: #14a58c;
 }
 .servise-list {
   display: flex;
@@ -140,12 +153,13 @@ header h2 {
   letter-spacing: 2px;
   font-weight: 400;
   padding: 0;
-  line-height: 42px;
 }
 .our-team p {
-  margin: 0;
   color: #47526b;
   font-weight: 400;
+}
+.our-team .line {
+  background-color: #c8d9e5;
 }
 .personal-list {
   margin-top: 75px;
@@ -216,12 +230,13 @@ header h2 {
 }
 .our-skills h2 {
   letter-spacing: 3px;
-  margin-bottom: 25px;
 }
 .our-skills p {
-  margin: 0;
   font-weight: 400;
   font-size: 18px;
+}
+.our-skills .line {
+  background-color: #dfe8ed;
 }
 .skill-items {
   margin-top: 60px;
@@ -253,11 +268,12 @@ header h2 {
 }
 .our-portfolio h2 {
   letter-spacing: 3px;
-  margin-bottom: 25px;
 }
 .our-portfolio p {
   font-weight: 400;
-  margin: 0;
+}
+.our-portfolio .line {
+  background-color: #e5c37f;
 }
 .our-portfolio .active {
   background-color: white;
@@ -314,12 +330,13 @@ header h2 {
 .feed-back h2 {
   font-size: 40px;
   letter-spacing: 4px;
-  margin-bottom: 25px;
 }
 .feed-back p {
   font-size: 18px;
   font-weight: 400;
-  margin-top: 0;
+}
+.feed-back .line {
+  background-color: #b73c6d;
 }
 .feedback-items {
   display: grid;
@@ -368,12 +385,13 @@ header h2 {
 .form-field h2 {
   font-size: 40px;
   letter-spacing: 4px;
-  margin-bottom: 25px;
 }
 .form-field p {
-  margin-top: 0;
   font-size: 18px;
   font-weight: 400;
+}
+.form-field .line {
+  background-color: #273a71;
 }
 .form-feedback {
   width: 860px;

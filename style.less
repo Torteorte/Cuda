@@ -23,6 +23,12 @@ a {
     width: 1100px;
     margin: 0 auto;
     text-align: center;
+    h2 {
+        margin-bottom: 10px;
+    }
+    > p {
+        margin-top: 15px;
+    }
 }
 
 h2 {
@@ -32,6 +38,12 @@ h2 {
 
 .upper {
     text-transform: uppercase;
+}
+
+.line {
+    width: 90px;
+    height: 5px;
+    margin: 10px auto;
 }
 
 /* Верхушка */
@@ -112,7 +124,6 @@ header {
     text-align: center;
     h2 {
         padding-top: 10px;
-        margin-bottom: 25px;
         font-size: 40px;
         font-weight: 600;
         letter-spacing: 4px;
@@ -122,6 +133,9 @@ header {
         font-size: 18px;
         color: #f0fbf9;
     }
+    .line {
+        background-color: #14a58c;
+    } 
 }
 
 .servise-list {
@@ -158,12 +172,13 @@ header {
         letter-spacing: 2px;
         font-weight: 400;
         padding: 0;
-        line-height: 42px;
     }
     p {
-        margin: 0;
         color: #47526b;
         font-weight: 400;
+    }
+    .line {
+        background-color: #c8d9e5;
     }
 }
 
@@ -238,12 +253,13 @@ header {
     padding-bottom: 125px;
     h2 {
         letter-spacing: 3px;
-        margin-bottom: 25px;
     }
     p {
-        margin: 0;
         font-weight: 400;
         font-size: 18px;
+    }
+    .line {
+        background-color: #dfe8ed;
     }
 }
 
@@ -278,11 +294,12 @@ header {
     color: #393939;
     h2 {
         letter-spacing: 3px;
-        margin-bottom: 25px;
     }
     p {
         font-weight: 400;
-        margin: 0;
+    }
+    .line {
+        background-color: #e5c37f;
     }
     .active {
         background-color: white;
@@ -344,12 +361,13 @@ header {
     h2 {
         font-size: 40px;
         letter-spacing: 4px;
-        margin-bottom: 25px;
     }
     p {
         font-size: 18px;
         font-weight: 400;
-        margin-top: 0;
+    }
+    .line {
+        background-color: #b73c6d;
     }
 }
 
@@ -404,12 +422,13 @@ header {
     h2 {
         font-size: 40px;
         letter-spacing: 4px;
-        margin-bottom: 25px;
     }
     p {
-        margin-top: 0;
         font-size: 18px;
         font-weight: 400;
+    }
+    .line {
+        background-color: #273a71;
     }
 }
 
@@ -488,8 +507,7 @@ footer {
             padding: 5px 0px;
         }
     }
-}
-
-footer a:hover {
-    color: #30bae7;
+    a:hover {
+        color: #30bae7;
+    }
 }

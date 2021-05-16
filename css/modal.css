@@ -1,0 +1,90 @@
+/* .vmodal {} */
+
+.vmodal.opens .modal-overlay,
+.vmodal.opens .modal-window {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.vmodal.hide .modal-overlay,
+.vmodal.hide .modal-window {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.vmodal.opens .modal-window {
+  transform: translateY(100px);
+}
+
+.vmodal.opens .modal-overlay {
+  background: rgba(0, 0, 0, .5);
+}
+
+.vmodal.hide .modal-window {
+  transform: translateY(-200px);
+}
+
+.vmodal.hide .modal-overlay {
+  background: rgba(0, 0, 0, 0);
+}
+
+.modal-window, .modal-overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+.modal-overlay {
+  color: black;
+  font-weight: 550;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background .2s ease-in;
+}
+
+.modal-window {
+  width: 400px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 auto;
+  transform: translateY(-200px);
+  transition: transform .2s ease-in;
+}
+  
+.modal-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+  
+.modal-title {
+  font-size: 1.5rem;
+  margin: auto;
+}
+  
+.modal-close {
+  cursor: pointer;
+}
+  
+.modal-body {
+  padding: 10px;
+}
+
+.modal-body ul {
+  padding: 0;
+}
+  
+.modal-body li {
+  margin: 0 0 10px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.modal-body a {
+  color: rgb(214, 121, 44)
+  
+}
